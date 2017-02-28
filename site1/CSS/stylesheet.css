@@ -1,0 +1,94 @@
+/* Stylesheet.css */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 35px;
+}
+
+body { 
+	background-color: bisque;
+}
+
+
+p {
+	padding: 10px;
+	margin-top: 50px;
+} 
+
+h4 {	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 1px solid black;
+	font-size: 25px;
+	padding: 5px;
+	margin: 0px;
+}
+
+.quote1 {
+	background-color: pink;
+	color: black;
+}
+
+.quote2 {
+	background-color: black;
+	color: white;
+}
+
+.quote3 {
+	background-color: red;
+	color: gold;
+}
+
+.quote {
+	float:left;
+	position: relative;
+	background-color: darkgray;
+	border: 1px solid black;
+	height: 200px;
+	margin: 2px;
+}
+
+.row {
+	width:90%;
+	font-size: 20px;
+	margin: auto;
+} 
+
+/* Desktop View */
+@media (min-width: 992px) { /* 3 columns in desktop */
+	.col-3 {
+		color: red;
+		width: 33%;
+	}
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {/* 2 columns and 1 column in tablet */
+	.col-1, .col-2 {
+		color: blue;
+	}
+	
+	
+	
+	.col-1 {
+		width: 100%;
+	}
+	
+	.col-2 {
+		width: 49.52%;
+	}
+}
+
+/* Mobile View */
+@media (max-width: 767px) {/* 1 column in mobile */
+	.col-1 {
+		color: green;
+		width: 100%;
+	}
+}
